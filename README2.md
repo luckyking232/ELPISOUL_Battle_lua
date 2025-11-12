@@ -1,11 +1,12 @@
 # Lua Scripts Documentation
 
-自动生成于 2025-11-12 23:08:21
+自动生成于 2025-11-12 23:18:18
 
 
-## 模块：`BattleAction`
+## 模块与函数
 
-**函数列表 (来源文件)：**
+### 模块：`BattleAction`
+
 - `BattleAction.ClearAttackInfo(battleUnit)`  —  文件: `BattleAction.lua.lua`
 - `BattleAction.DealAttack(attackUnit)`  —  文件: `BattleAction.lua.lua`
 - `BattleAction.DealAttackOver(battleUnit)`  —  文件: `BattleAction.lua.lua`
@@ -50,11 +51,8 @@
 - `BattleAction.UpdateModelFlipWhenAttack(battleUnit)`  —  文件: `BattleAction.lua.lua`
 - `BattleAction.UpdateModelTimescale(battleUnit, forceUpdateDisplay)`  —  文件: `BattleAction.lua.lua`
 
----
+### 模块：`BattleActionDisplay`
 
-## 模块：`BattleActionDisplay`
-
-**函数列表 (来源文件)：**
 - `BattleActionDisplay.AddWaitDealEffect(fromUnit, targetUnit, name, path, autoDestroy, bindSlot, rotationAroundY)`  —  文件: `BattleActionDisplay.lua.lua`
 - `BattleActionDisplay.AddWaitDealSound(path, bank, model, loopSound_BuffUid)`  —  文件: `BattleActionDisplay.lua.lua`
 - `BattleActionDisplay.AddWaitDealVoice(unitUid, bubbleType)`  —  文件: `BattleActionDisplay.lua.lua`
@@ -97,11 +95,8 @@
 - `BattleActionDisplay.UpdateModelFlipWhenAttack(battleUnit)`  —  文件: `BattleActionDisplay.lua.lua`
 - `BattleActionDisplay.UpdateModelTimescale(battleUnit)`  —  文件: `BattleActionDisplay.lua.lua`
 
----
+### 模块：`BattleAxisWindow`
 
-## 模块：`BattleAxisWindow`
-
-**函数列表 (来源文件)：**
 - `BattleAxisWindow.ClickDeathBtn()`  —  文件: `BattleAxisWindow.lua.lua`
 - `BattleAxisWindow.ClickHand(camp, index, headType)`  —  文件: `BattleAxisWindow.lua.lua`
 - `BattleAxisWindow.ClickManuallySkillBtn()`  —  文件: `BattleAxisWindow.lua.lua`
@@ -138,45 +133,30 @@
 - `BattleAxisWindow.UpdateHeadVisible()`  —  文件: `BattleAxisWindow.lua.lua`
 - `BattleAxisWindow.UpdateInfo()`  —  文件: `BattleAxisWindow.lua.lua`
 
----
+### 模块：`BattleBackground`
 
-## 模块：`BattleBackground`
-
-**函数列表 (来源文件)：**
 - `BattleBackground.Clear()`  —  文件: `BattleBackground.lua.lua`
 - `BattleBackground.Init()`  —  文件: `BattleBackground.lua.lua`
 
----
+### 模块：`BattleBomb`
 
-## 模块：`BattleBomb`
-
-**函数列表 (来源文件)：**
 - `BattleBomb.InitLocalVar()`  —  文件: `BattleBomb.lua.lua`
 - `BattleBomb.NewBomb(showDisplayConfig, fromUnit, targetUnit, skillId, subSkillId, bombExtraParams)`  —  文件: `BattleBomb.lua.lua`
 
----
+### 模块：`BattleBuff`
 
-## 模块：`BattleBuff`
-
-**函数列表 (来源文件)：**
 - `BattleBuff.InitLocalVar()`  —  文件: `BattleBuff.lua.lua`
 - `BattleBuff.NewBuff(_id, _from, _to, _settleNow, _extraParams, _delayParams)`  —  文件: `BattleBuff.lua.lua`
 
----
+### 模块：`BattleBuffEffect`
 
-## 模块：`BattleBuffEffect`
-
-**函数列表 (来源文件)：**
 - `BattleBuffEffect.DealBeAffectedWithEffect(effect, finalValue)`  —  文件: `BattleBuffEffect.lua.lua`
 - `BattleBuffEffect.GetEffectValue(effect, params, getValueParams)`  —  文件: `BattleBuffEffect.lua.lua`
 - `BattleBuffEffect.InitLocalVar()`  —  文件: `BattleBuffEffect.lua.lua`
 - `BattleBuffEffect.NewEffect(effectStr, belongBuffUid)`  —  文件: `BattleBuffEffect.lua.lua`
 
----
+### 模块：`BattleBuffMgr`
 
-## 模块：`BattleBuffMgr`
-
-**函数列表 (来源文件)：**
 - `BattleBuffMgr.AddToBuffList(buff)`  —  文件: `BattleBuffMgr.lua.lua`
 - `BattleBuffMgr.AnalysisBuffList(buffList, buffFrom, buffTos, settleNow, extraParams)`  —  文件: `BattleBuffMgr.lua.lua`
 - `BattleBuffMgr.ClearAllBuff()`  —  文件: `BattleBuffMgr.lua.lua`
@@ -245,43 +225,28 @@
 - `BattleBuffMgr.UpdateAllBuff(curFixedFrame)`  —  文件: `BattleBuffMgr.lua.lua`
 - `BattleBuffMgr.UpdateUnitBuffShield(unit, hurt)`  —  文件: `BattleBuffMgr.lua.lua`
 
----
+### 模块：`BattleBullet`
 
-## 模块：`BattleBullet`
-
-**函数列表 (来源文件)：**
 - `BattleBullet.InitLocalVar()`  —  文件: `BattleBullet.lua.lua`
 - `BattleBullet.NewBullet(showDisplayConfig, fromUnit, defUnit, fromPos, toPos, subSkillId, skillId, speed, bulletExtraParams)`  —  文件: `BattleBullet.lua.lua`
 
----
+### 模块：`BattleBurst`
 
-## 模块：`BattleBurst`
-
-**函数列表 (来源文件)：**
 - `BattleBurst.InitLocalVar()`  —  文件: `BattleBurst.lua.lua`
 - `BattleBurst.NewBurst(burstId, camp)`  —  文件: `BattleBurst.lua.lua`
 
----
+### 模块：`BattleBurstSkill`
 
-## 模块：`BattleBurstSkill`
-
-**函数列表 (来源文件)：**
 - `BattleBurstSkill.InitLocalVar()`  —  文件: `BattleBurstSkill.lua.lua`
 - `BattleBurstSkill.NewSkill(skillId, camp, burstId)`  —  文件: `BattleBurstSkill.lua.lua`
 
----
+### 模块：`BattleCamp`
 
-## 模块：`BattleCamp`
-
-**函数列表 (来源文件)：**
 - `BattleCamp.DealCampCharge(camp, hurt)`  —  文件: `BattleCamp.lua.lua`
 - `BattleCamp.NewCamp(camp)`  —  文件: `BattleCamp.lua.lua`
 
----
+### 模块：`BattleChoose`
 
-## 模块：`BattleChoose`
-
-**函数列表 (来源文件)：**
 - `BattleChoose.GetAllSummonBySide(camp, includeBuilding)`  —  文件: `BattleChoose.lua.lua`
 - `BattleChoose.GetAllSummonByUnit(unit)`  —  文件: `BattleChoose.lua.lua`
 - `BattleChoose.GetBuffMaxOverlayUnreachedCards(atkUnit, isSameSide, effectId, notIncludeSelf)`  —  文件: `BattleChoose.lua.lua`
@@ -317,11 +282,8 @@
 - `BattleChoose.GetUnitsFor3120(selfUnit, isSameSide, numLimit, isReverse)`  —  文件: `BattleChoose.lua.lua`
 - `BattleChoose.InitLocalVar()`  —  文件: `BattleChoose.lua.lua`
 
----
+### 模块：`BattleControl`
 
-## 模块：`BattleControl`
-
-**函数列表 (来源文件)：**
 - `BattleControl.Continue()`  —  文件: `BattleControl.lua.lua`
 - `BattleControl.Init()`  —  文件: `BattleControl.lua.lua`
 - `BattleControl.InitLocalVar()`  —  文件: `BattleControl.lua.lua`
@@ -334,11 +296,8 @@
 - `BattleControl.UpdateProcess()`  —  文件: `BattleControl.lua.lua`
 - `BattleControl.UpdateProcess_2(curFixedFrame)`  —  文件: `BattleControl.lua.lua`
 
----
+### 模块：`BattleData`
 
-## 模块：`BattleData`
-
-**函数列表 (来源文件)：**
 - `BattleData.CacheChallengeStageRsp(data)`  —  文件: `BattleData.lua.lua`
 - `BattleData.Clear()`  —  文件: `BattleData.lua.lua`
 - `BattleData.ClearCachedChallengeStageRsp()`  —  文件: `BattleData.lua.lua`
@@ -359,11 +318,8 @@
 - `BattleData.SortUnitListInit(list)`  —  文件: `BattleData.lua.lua`
 - `BattleData.UpdateBattleScore(unit, damage)`  —  文件: `BattleData.lua.lua`
 
----
+### 模块：`BattleDataCount`
 
-## 模块：`BattleDataCount`
-
-**函数列表 (来源文件)：**
 - `BattleDataCount.DealBuffEffect(atkUnit, defUnit, hurt, skillType, isBuff, extraParams, subSkillId, hurtIndex, params)`  —  文件: `BattleDataCount.lua.lua`
 - `BattleDataCount.DealSpecialDamageAdd(atkUnit, defUnit, hurt, extraParams, skillType, params)`  —  文件: `BattleDataCount.lua.lua`
 - `BattleDataCount.GetManuallySkillHurt(skill, subSkillId, defUid)`  —  文件: `BattleDataCount.lua.lua`
@@ -372,11 +328,8 @@
 - `BattleDataCount.InitLocalVar()`  —  文件: `BattleDataCount.lua.lua`
 - `BattleDataCount.PanDingKeZhiBuff(effect, defUnit)`  —  文件: `BattleDataCount.lua.lua`
 
----
+### 模块：`BattleDataWindow`
 
-## 模块：`BattleDataWindow`
-
-**函数列表 (来源文件)：**
 - `BattleDataWindow.ClickRoundBtn(eventContext)`  —  文件: `BattleDataWindow.lua.lua`
 - `BattleDataWindow.CloseWindow()`  —  文件: `BattleDataWindow.lua.lua`
 - `BattleDataWindow.CreateWaveList()`  —  文件: `BattleDataWindow.lua.lua`
@@ -400,11 +353,8 @@
 - `BattleDataWindow.UpdateSkillInfo()`  —  文件: `BattleDataWindow.lua.lua`
 - `BattleDataWindow.UpdateUnitInfo()`  —  文件: `BattleDataWindow.lua.lua`
 
----
+### 模块：`BattleFinishFailWindow`
 
-## 模块：`BattleFinishFailWindow`
-
-**函数列表 (来源文件)：**
 - `BattleFinishFailWindow.CloseWindow()`  —  文件: `BattleFinishFailWindow.lua.lua`
 - `BattleFinishFailWindow.HandleMessage(msgId, para)`  —  文件: `BattleFinishFailWindow.lua.lua`
 - `BattleFinishFailWindow.InitBtn()`  —  文件: `BattleFinishFailWindow.lua.lua`
@@ -422,11 +372,8 @@
 - `BattleFinishFailWindow.UpdateInfo()`  —  文件: `BattleFinishFailWindow.lua.lua`
 - `BattleFinishFailWindow.UpdateResult()`  —  文件: `BattleFinishFailWindow.lua.lua`
 
----
+### 模块：`BattleFinishWindow`
 
-## 模块：`BattleFinishWindow`
-
-**函数列表 (来源文件)：**
 - `BattleFinishWindow.CancelSave()`  —  文件: `BattleFinishWindow.lua.lua`
 - `BattleFinishWindow.CloseWindow()`  —  文件: `BattleFinishWindow.lua.lua`
 - `BattleFinishWindow.DelayedCall()`  —  文件: `BattleFinishWindow.lua.lua`
@@ -457,19 +404,13 @@
 - `BattleFinishWindow.UpdateShowLevelUp()`  —  文件: `BattleFinishWindow.lua.lua`
 - `BattleFinishWindow.UpdateTarget()`  —  文件: `BattleFinishWindow.lua.lua`
 
----
+### 模块：`BattleGrid`
 
-## 模块：`BattleGrid`
-
-**函数列表 (来源文件)：**
 - `BattleGrid.InitLocalVar()`  —  文件: `BattleGrid.lua.lua`
 - `BattleGrid.NewGrid(indexX, indexY)`  —  文件: `BattleGrid.lua.lua`
 
----
+### 模块：`BattleHurtNum`
 
-## 模块：`BattleHurtNum`
-
-**函数列表 (来源文件)：**
 - `BattleHurtNum.ClearHurtNum()`  —  文件: `BattleHurtNum.lua.lua`
 - `BattleHurtNum.ClearPool()`  —  文件: `BattleHurtNum.lua.lua`
 - `BattleHurtNum.HideAll()`  —  文件: `BattleHurtNum.lua.lua`
@@ -483,11 +424,8 @@
 - `BattleHurtNum.ShowPopWord(word, bindObject)`  —  文件: `BattleHurtNum.lua.lua`
 - `BattleHurtNum.UpdateNormalHurtVisible()`  —  文件: `BattleHurtNum.lua.lua`
 
----
+### 模块：`BattleInfoWindow`
 
-## 模块：`BattleInfoWindow`
-
-**函数列表 (来源文件)：**
 - `BattleInfoWindow.InitBtn()`  —  文件: `BattleInfoWindow.lua.lua`
 - `BattleInfoWindow.OnClose()`  —  文件: `BattleInfoWindow.lua.lua`
 - `BattleInfoWindow.OnInit(bridgeObj)`  —  文件: `BattleInfoWindow.lua.lua`
@@ -499,11 +437,8 @@
 - `BattleInfoWindow.UpdateSetTips(tipsHand, info, value)`  —  文件: `BattleInfoWindow.lua.lua`
 - `BattleInfoWindow.UpdateSwitchBtn(btn, value)`  —  文件: `BattleInfoWindow.lua.lua`
 
----
+### 模块：`BattleLoadingWindow`
 
-## 模块：`BattleLoadingWindow`
-
-**函数列表 (来源文件)：**
 - `BattleLoadingWindow.HandleMessage(msgId, para)`  —  文件: `BattleLoadingWindow.lua.lua`
 - `BattleLoadingWindow.InitBtn()`  —  文件: `BattleLoadingWindow.lua.lua`
 - `BattleLoadingWindow.OnClose()`  —  文件: `BattleLoadingWindow.lua.lua`
@@ -514,27 +449,18 @@
 - `BattleLoadingWindow.ShowAnimOut(callback)`  —  文件: `BattleLoadingWindow.lua.lua`
 - `BattleLoadingWindow.UpdateInfo()`  —  文件: `BattleLoadingWindow.lua.lua`
 
----
+### 模块：`BattleManuallySkill`
 
-## 模块：`BattleManuallySkill`
-
-**函数列表 (来源文件)：**
 - `BattleManuallySkill.GetMinHpRangeUnit(atkUnit, isSameSide)`  —  文件: `BattleManuallySkill.lua.lua`
 - `BattleManuallySkill.InitLocalVar()`  —  文件: `BattleManuallySkill.lua.lua`
 - `BattleManuallySkill.NewSkill(skillId, skillLevel, camp)`  —  文件: `BattleManuallySkill.lua.lua`
 
----
+### 模块：`BattleMessageBar`
 
-## 模块：`BattleMessageBar`
-
-**函数列表 (来源文件)：**
 - `BattleMessageBar.BindInfo(unit)`  —  文件: `BattleMessageBar.lua.lua`
 
----
+### 模块：`BattleMgr`
 
-## 模块：`BattleMgr`
-
-**函数列表 (来源文件)：**
 - `BattleMgr.CloseBattle(isManual, forceClose, closeWindowParam)`  —  文件: `BattleMgr.lua.lua`
 - `BattleMgr.GetWaveName(waveIndex)`  —  文件: `BattleMgr.lua.lua`
 - `BattleMgr.InitBattle(msg, delayClearScene, isPlayback)`  —  文件: `BattleMgr.lua.lua`
@@ -544,11 +470,8 @@
 - `BattleMgr.SendBattleOverMsg(data, rspCallback)`  —  文件: `BattleMgr.lua.lua`
 - `BattleMgr.StartBattle(delayClearScene)`  —  文件: `BattleMgr.lua.lua`
 
----
+### 模块：`BattleNumberWindow`
 
-## 模块：`BattleNumberWindow`
-
-**函数列表 (来源文件)：**
 - `BattleNumberWindow.HandleMessage(msgId, para)`  —  文件: `BattleNumberWindow.lua.lua`
 - `BattleNumberWindow.Init()`  —  文件: `BattleNumberWindow.lua.lua`
 - `BattleNumberWindow.InitBtn()`  —  文件: `BattleNumberWindow.lua.lua`
@@ -556,11 +479,8 @@
 - `BattleNumberWindow.OnClose()`  —  文件: `BattleNumberWindow.lua.lua`
 - `BattleNumberWindow.OnInit(bridgeObj)`  —  文件: `BattleNumberWindow.lua.lua`
 
----
+### 模块：`BattleOperation`
 
-## 模块：`BattleOperation`
-
-**函数列表 (来源文件)：**
 - `BattleOperation.AddBurstOperation(skill, camp)`  —  文件: `BattleOperation.lua.lua`
 - `BattleOperation.AddManuallyOperation(skill, camp)`  —  文件: `BattleOperation.lua.lua`
 - `BattleOperation.ChooseBurstSkill(camp)`  —  文件: `BattleOperation.lua.lua`
@@ -574,11 +494,8 @@
 - `BattleOperation.InitLocalVar()`  —  文件: `BattleOperation.lua.lua`
 - `BattleOperation.SavePausedBurst(burst)`  —  文件: `BattleOperation.lua.lua`
 
----
+### 模块：`BattlePathFinding`
 
-## 模块：`BattlePathFinding`
-
-**函数列表 (来源文件)：**
 - `BattlePathFinding.AddCloseIndex(x, y)`  —  文件: `BattlePathFinding.lua.lua`
 - `BattlePathFinding.ChangeEmpty(x, y)`  —  文件: `BattlePathFinding.lua.lua`
 - `BattlePathFinding.ChangeRed(x, y)`  —  文件: `BattlePathFinding.lua.lua`
@@ -591,11 +508,8 @@
 - `BattlePathFinding.RemoveCloseIndex(x, y)`  —  文件: `BattlePathFinding.lua.lua`
 - `BattlePathFinding.UpdateTestPath(resultPath)`  —  文件: `BattlePathFinding.lua.lua`
 
----
+### 模块：`BattlePlayerNumberWindow`
 
-## 模块：`BattlePlayerNumberWindow`
-
-**函数列表 (来源文件)：**
 - `BattlePlayerNumberWindow.InitBtn()`  —  文件: `BattlePlayerNumberWindow.lua.lua`
 - `BattlePlayerNumberWindow.OnClose()`  —  文件: `BattlePlayerNumberWindow.lua.lua`
 - `BattlePlayerNumberWindow.OnInit(bridgeObj)`  —  文件: `BattlePlayerNumberWindow.lua.lua`
@@ -603,11 +517,8 @@
 - `BattlePlayerNumberWindow.ReInitData()`  —  文件: `BattlePlayerNumberWindow.lua.lua`
 - `BattlePlayerNumberWindow.UpdateInfo()`  —  文件: `BattlePlayerNumberWindow.lua.lua`
 
----
+### 模块：`BattleRecord`
 
-## 模块：`BattleRecord`
-
-**函数列表 (来源文件)：**
 - `BattleRecord.Init()`  —  文件: `BattleRecord.lua.lua`
 - `BattleRecord.SaveBasic(mapId, time)`  —  文件: `BattleRecord.lua.lua`
 - `BattleRecord.SaveBuffEffectDisplayList(params)`  —  文件: `BattleRecord.lua.lua`
@@ -621,11 +532,8 @@
 - `BattleRecord.SaveUnitUpdate(params)`  —  文件: `BattleRecord.lua.lua`
 - `BattleRecord.SetEnableRecord(enable)`  —  文件: `BattleRecord.lua.lua`
 
----
+### 模块：`BattleScene`
 
-## 模块：`BattleScene`
-
-**函数列表 (来源文件)：**
 - `BattleScene.AddBomb(bomb)`  —  文件: `BattleScene.lua.lua`
 - `BattleScene.AddBullet(bullet)`  —  文件: `BattleScene.lua.lua`
 - `BattleScene.AddBurst(burst)`  —  文件: `BattleScene.lua.lua`
@@ -738,11 +646,8 @@
 - `BattleScene.UpdateSkillInfo(skillInfo)`  —  文件: `BattleScene.lua.lua`
 - `BattleScene.UpdateSkillStartFrameInfo(camp, frame, burstCardSkillStartFrame)`  —  文件: `BattleScene.lua.lua`
 
----
+### 模块：`BattleService`
 
-## 模块：`BattleService`
-
-**函数列表 (来源文件)：**
 - `BattleService.ChallengeStageReq(reqMsg, rspCallback, errorCallback)`  —  文件: `BattleService.lua.lua`
 - `BattleService.DealChallengeStageRsp(msg)`  —  文件: `BattleService.lua.lua`
 - `BattleService.DealPrepareBattleRsp(msg)`  —  文件: `BattleService.lua.lua`
@@ -753,11 +658,8 @@
 - `BattleService.PrepareBattleReq(params)`  —  文件: `BattleService.lua.lua`
 - `BattleService.SaveStagePrepareInfoReq(sceneType, cardUid2Pos, buildUid2Pos, leaderCardId, burstOrderSetting, callback)`  —  文件: `BattleService.lua.lua`
 
----
+### 模块：`BattleSkillWait`
 
-## 模块：`BattleSkillWait`
-
-**函数列表 (来源文件)：**
 - `BattleSkillWait.AddSkill(unitUid, skillId, targetUidList, specificCondition, triggerFromUnitUid)`  —  文件: `BattleSkillWait.lua.lua`
 - `BattleSkillWait.Clear()`  —  文件: `BattleSkillWait.lua.lua`
 - `BattleSkillWait.DealSkillWaitList()`  —  文件: `BattleSkillWait.lua.lua`
@@ -766,21 +668,15 @@
 - `BattleSkillWait.IsSkillWait(unitUid, skillId)`  —  文件: `BattleSkillWait.lua.lua`
 - `BattleSkillWait.RemoveSkillWait(unitUid, skillId)`  —  文件: `BattleSkillWait.lua.lua`
 
----
+### 模块：`BattleSummonWait`
 
-## 模块：`BattleSummonWait`
-
-**函数列表 (来源文件)：**
 - `BattleSummonWait.AddSummon(param, delayFrame)`  —  文件: `BattleSummonWait.lua.lua`
 - `BattleSummonWait.Clear()`  —  文件: `BattleSummonWait.lua.lua`
 - `BattleSummonWait.DealSummonWaitList()`  —  文件: `BattleSummonWait.lua.lua`
 - `BattleSummonWait.Init()`  —  文件: `BattleSummonWait.lua.lua`
 
----
+### 模块：`BattleTransform`
 
-## 模块：`BattleTransform`
-
-**函数列表 (来源文件)：**
 - `BattleTransform.AddTransform(transformWait)`  —  文件: `BattleTransform.lua.lua`
 - `BattleTransform.CanTransform(unit)`  —  文件: `BattleTransform.lua.lua`
 - `BattleTransform.Clear()`  —  文件: `BattleTransform.lua.lua`
@@ -789,11 +685,8 @@
 - `BattleTransform.InitLocalVar()`  —  文件: `BattleTransform.lua.lua`
 - `BattleTransform.RemoveTransformWait(unitUid)`  —  文件: `BattleTransform.lua.lua`
 
----
+### 模块：`BattleUIWindow`
 
-## 模块：`BattleUIWindow`
-
-**函数列表 (来源文件)：**
 - `BattleUIWindow.AddCardBurstCdEffect(unitUid)`  —  文件: `BattleUIWindow.lua.lua`
 - `BattleUIWindow.AddCardChosenEffect(unitUid)`  —  文件: `BattleUIWindow.lua.lua`
 - `BattleUIWindow.AddCardPlayBurstSkillEffect(unitUid)`  —  文件: `BattleUIWindow.lua.lua`
@@ -879,69 +772,470 @@
 - `BattleUIWindow.UpdateUIVisibleInBurst(show)`  —  文件: `BattleUIWindow.lua.lua`
 - `BattleUIWindow.UpdateWave()`  —  文件: `BattleUIWindow.lua.lua`
 
----
+### 模块：`BattleUnit`
 
-## 模块：`BattleUnit`
-
-**函数列表 (来源文件)：**
 - `BattleUnit.InitLocalVar()`  —  文件: `BattleUnit.lua.lua`
 - `BattleUnit.NewUnit(data)`  —  文件: `BattleUnit.lua.lua`
 
----
+### 模块：`_全局_`
 
-## 模块：`_全局_`
-
-**函数列表 (来源文件)：**
 - `callBack()`  —  文件: `BattleUnit.lua.lua`
 - `changeFunc(track, event)`  —  文件: `BattleUnit.lua.lua`
 - `dealCardSkill(skillId, level)`  —  文件: `BattleUnit.lua.lua`
 - `print_battle()`  —  文件: `BattleMgr.lua.lua`
 - `print_server()`  —  文件: `BattleMgr.lua.lua`
 
----
+### 模块：`burstShowList`
 
-## 模块：`burstShowList`
-
-**函数列表 (来源文件)：**
 - `burstShowList.itemRenderer(index, item)`  —  文件: `BattleInfoWindow.lua.lua`
 
----
+### 模块：`dotList`
 
-## 模块：`dotList`
-
-**函数列表 (来源文件)：**
 - `dotList.itemRenderer(index, item)`  —  文件: `BattleUIWindow.lua.lua`
 
----
+### 模块：`list`
 
-## 模块：`list`
-
-**函数列表 (来源文件)：**
 - `list.itemRenderer(index, item)`  —  文件: `BattleAxisWindow.lua.lua`
 - `list.itemRenderer(index, item)`  —  文件: `BattleDataWindow.lua.lua`
 
----
+### 模块：`scoreTag`
 
-## 模块：`scoreTag`
-
-**函数列表 (来源文件)：**
 - `scoreTag.StartList.itemRenderer(index, item)`  —  文件: `BattleUIWindow.lua.lua`
 
----
+### 模块：`tipsList`
 
-## 模块：`tipsList`
-
-**函数列表 (来源文件)：**
 - `tipsList.itemRenderer(i, gcmp)`  —  文件: `BattleFinishWindow.lua.lua`
 
----
+### 模块：`trackEntry`
 
-## 模块：`trackEntry`
-
-**函数列表 (来源文件)：**
 - `trackEntry.completeAction()`  —  文件: `BattleActionDisplay.lua.lua`
 
----
 
+## 全局表 / 常量
+
+- `ATTRACT`
+- `BATTLE_BUFF_TYPE`
+- `BATTLE_BURST_STATE`
+- `BATTLE_CAMP_FLAG`
+- `BATTLE_CONFIG_ENUM`
+- `BATTLE_DEPEND_TYPE`
+- `BATTLE_MONSTER_RANK`
+- `BATTLE_MOTION_STATE_ENUM`
+- `BATTLE_MOTION_STATE_INFO`
+- `BATTLE_OPERATION_TYPE`
+- `BATTLE_RANGE_TYPE`
+- `BATTLE_RES_PATH`
+- `BATTLE_SPEED_ENUM`
+- `BATTLE_STATE_ENUM`
+- `BATTLE_TRANSFORM_CONDITION`
+- `BATTLE_UNIT_ELEMENT_TYPE`
+- `BATTLE_WIN_CONDITION_TYPE`
+- `BLIND`
+- `BUFF`
+- `BUFF_CONTROL_TYPE`
+- `BUFF_DEDUCE_TYPE`
+- `BUFF_EFFECT_ID`
+- `BUFF_EFFECT_TAG`
+- `BUFF_EFFECT_VALUE`
+- `BUFF_REMOVE_TYPE`
+- `BUFF_SETTLE_TYPE`
+- `BUFF_STATE_ENUM`
+- `BULLET_TYPE_ENUM`
+- `BURST_HURT_NUM_ENUM`
+- `BattleAction`
+- `BattleActionDisplay`
+- `BattleAxisWindow`
+- `BattleBackground`
+- `BattleBomb`
+- `BattleBuff`
+- `BattleBuffEffect`
+- `BattleBuffMgr`
+- `BattleBuffWordType`
+- `BattleBullet`
+- `BattleBurst`
+- `BattleBurstSkill`
+- `BattleCamp`
+- `BattleChoose`
+- `BattleControl`
+- `BattleData`
+- `BattleDataCount`
+- `BattleDataWindow`
+- `BattleExpressionCom`
+- `BattleFinishFailWindow`
+- `BattleFinishWindow`
+- `BattleGrid`
+- `BattleHurtNum`
+- `BattleHurtNumComName`
+- `BattleHurtNumType`
+- `BattleInfoWindow`
+- `BattleLoadingWindow`
+- `BattleManuallySkill`
+- `BattleMessageBar`
+- `BattleMgr`
+- `BattleNumberWindow`
+- `BattleOperation`
+- `BattlePathFinding`
+- `BattlePlayerNumberWindow`
+- `BattleRecord`
+- `BattleScene`
+- `BattleService`
+- `BattleSkillWait`
+- `BattleSummonWait`
+- `BattleTransform`
+- `BattleUIWindow`
+- `BattleUnit`
+- `CAMERA_POSITION`
+- `CHARM`
+- `DATA_TYPE_ENUM`
+- `DEAD`
+- `DEBUFF`
+- `EFFECT_ATTR_CAL_TYPE`
+- `EXPRESSION_TYPE`
+- `FREEZE`
+- `HEAD_STATE_COLOR_TEXT_ID`
+- `HEAD_STATE_TEXT_ID`
+- `HEAD_TYPE`
+- `HIT`
+- `HURT_NUM_ENUM`
+- `MANUALLY_SKILL_STATE`
+- `MONSTER_HEAD_STATE_COLOR_TEXT_ID`
+- `MONSTER_HEAD_STATE_INDEX_COLOR_TEXT_ID`
+- `PERSIST_BURN`
+- `PERSIST_DARK`
+- `PERSIST_ICE`
+- `PERSIST_LIGHT`
+- `PERSIST_WATER`
+- `PERSIST_WOOD`
+- `PETRIFIED`
+- `RestraintAddName`
+- `RestraintSubName`
+- `SILENT`
+- `SKILL_DIRECTION`
+- `SKILL_MAIN_TYPE`
+- `STUN`
+- `TRIGGER_CONDITION`
+- `TRIGGER_LIMIT`
+- `_allAliveUnit`
+- `_allAliveUnitHaveRage`
+- `_allBombUid`
+- `_allBombUidCopy`
+- `_allBulletUid`
+- `_allBulletUidCopy`
+- `_allBurst`
+- `_allBurstByCamp`
+- `_allCamp`
+- `_allGird`
+- `_allManuallySkill`
+- `_allUnit`
+- `_bombByUid`
+- `_bulletByUid`
+- `_cachedCardBurstTimerUtilList`
+- `_cachedEnemyTriggerCondition`
+- `_cachedPartnerTriggerCondition`
+- `_gridByCamp`
+- `_gridByUid`
+- `_manuallySkillByCamp`
+- `_manuallySkillByUid`
+- `_manuallySkillInfos`
+- `_mapArray`
+- `_rightDeadUnitCountByRank`
+- `_rightUnitCountByRank`
+- `_skillInfos`
+- `_triggerTrap`
+- `_unitByCamp`
+- `_unitByUid`
+- `angleIndexList`
+- `angleListAll`
+- `attackPointList`
+- `attackSoundList`
+- `attackSoundTargetList`
+- `attackVoiceList`
+- `attackWarningEffectList`
+- `attrMap`
+- `attrNameList`
+- `attrStrList`
+- `autoManuallySkillCache`
+- `availableUnitList`
+- `badgeSuitBuffList`
+- `barInfo`
+- `battleData`
+- `battleHurtNumUrlList`
+- `beatBackDis`
+- `beatBackPerFrame`
+- `blockList`
+- `bomb`
+- `bossBuffListInfo`
+- `btnInfoList`
+- `btnList`
+- `buff`
+- `buffEffectDisplayList`
+- `buffEffectParams`
+- `buffFromAtk`
+- `buffList`
+- `buffListInfo`
+- `buffParams`
+- `buffStateCheck`
+- `buffUidList`
+- `buffUids`
+- `buffWordsDisplayList`
+- `bullet`
+- `bulletExtraParams`
+- `bulletInit`
+- `bulletInitList`
+- `bulletUpdate`
+- `bulletUpdateList`
+- `burst`
+- `burstCardSkillInfoList`
+- `burstCardSkillList`
+- `burstChooseCardInfos`
+- `burstOperationList`
+- `burstSkillInfoList`
+- `burstSkillList`
+- `cached1035SettleUnitUidList`
+- `cachedBuffAttr`
+- `cachedBuffControlType`
+- `cachedBuffEffect`
+- `cachedBuffEffectTag`
+- `cachedCardBuffList`
+- `cachedChallengeStageRsp`
+- `cachedDisplayHurtTips`
+- `cachedDistance`
+- `cachedForceControlEffectIdList`
+- `cachedHandByKey`
+- `cachedIsMonsterList`
+- `cachedList`
+- `cachedPath`
+- `cachedSkillLevelUpConfigs`
+- `cachedSkillShowDisplayInfos`
+- `cachedSummonUids`
+- `cachedTargetArray`
+- `cachedTargetUid`
+- `cachedUnitTypeCountList`
+- `campList`
+- `campObject`
+- `campTable`
+- `canChargeUnitUidList`
+- `cardHeadRegionList`
+- `cardList`
+- `cardStates`
+- `cards`
+- `challengeResultData`
+- `challengeTargetInfo`
+- `chooseCardConfig`
+- `clientTeamNeutral`
+- `clientTeamRight`
+- `closed`
+- `color`
+- `configs`
+- `containAttributeIdMap`
+- `containEffect`
+- `controlType`
+- `copy`
+- `copySortBuffUidList`
+- `counter`
+- `counterEffectParams`
+- `coverRadius`
+- `coverdGripMap`
+- `curBurstSkillCardList`
+- `curSettingList`
+- `curSkill`
+- `curUnitDataList`
+- `data`
+- `dataList`
+- `dataParam`
+- `deadInfoMap`
+- `deathInfoList`
+- `deathList`
+- `delayParams`
+- `devourPerFrame`
+- `display`
+- `displayInfo`
+- `displayPosition`
+- `drops`
+- `effect`
+- `effectList`
+- `effectModelList`
+- `effectTagList`
+- `effectTags`
+- `embattleInfoMap`
+- `endPoints`
+- `endPosition`
+- `enemyTriggerConditionList`
+- `extraParams`
+- `fashionList`
+- `fearTargetPosition`
+- `followPositionUnitUid`
+- `fromPos`
+- `grid`
+- `gridList`
+- `headInfo`
+- `hurtDisplayList`
+- `hurtEffectParams`
+- `hurtExtraParams`
+- `hurtUidList`
+- `iconList`
+- `inRangeUnit`
+- `inRangeUnitList`
+- `initData`
+- `jobList`
+- `killMonster`
+- `leftBtnList`
+- `leftSkillDamage`
+- `leftSplitDamage`
+- `leftUnitDamage`
+- `list`
+- `listByType`
+- `listenerDeduceList`
+- `listenerRemoveList`
+- `listenerSettleList`
+- `m`
+- `manuallyOperationList`
+- `manuallySkillDamageInfoList`
+- `manuallySkillInfoList`
+- `manuallySkillList`
+- `math_g_value`
+- `math_list`
+- `minHpInfoMap`
+- `modelAnimationList`
+- `monsterIdHistory`
+- `motionStateList`
+- `motion_id`
+- `msg`
+- `name`
+- `nearestPosition`
+- `newOpen`
+- `object`
+- `oneSplitDamage`
+- `oneTypeList`
+- `open`
+- `openMap`
+- `operation`
+- `oriPosition`
+- `otherEffectList`
+- `otherSkillList`
+- `otherSkillTriggerTable`
+- `param`
+- `params`
+- `partnerTriggerConditionList`
+- `passiveSkillLevel`
+- `passiveSkillTriggerTable`
+- `path`
+- `persistEffect`
+- `pointObjectList`
+- `pos`
+- `position`
+- `preloadBank`
+- `preloadEffect`
+- `rageDisplayList`
+- `randomSeeds`
+- `realTimeAttrList`
+- `record`
+- `replayBasic`
+- `returnList`
+- `returnUnitList`
+- `rightBtnList`
+- `rightSkillDamage`
+- `rightUnitDamage`
+- `savedAttackSoundList`
+- `savedAttackSoundTargetList`
+- `savedAttackVoiceList`
+- `savedBuffEffectDisplayList`
+- `savedBuffList`
+- `savedBuffWordsDisplayList`
+- `savedBurstCardSkillStartFrame`
+- `savedBurstChooseCardInfos`
+- `savedConfigPool`
+- `savedHurtDisplayList`
+- `savedRageDisplayList`
+- `savedSkillLevelUpConfig`
+- `savedSkillShowConfig`
+- `savedSkillShowDisplayAttackList`
+- `savedSkillShowId`
+- `savedSmallSkillList`
+- `savedSubSkillConfig`
+- `savedTriggerList`
+- `savedTriggerSkillList`
+- `savedWarningEffectList`
+- `scoreInfo`
+- `self`
+- `sendMsg`
+- `skeletonModelList`
+- `skill`
+- `skill2Level`
+- `skillEffectList`
+- `skillIdList`
+- `skillInfoList`
+- `skillInitList`
+- `skillList`
+- `skillListById`
+- `skillTargetUidList`
+- `skillTypeToSort1`
+- `skillTypeToSort2`
+- `skillUpdateList`
+- `skillWaitList`
+- `smallSkillInfoList`
+- `smallSkillList`
+- `sort2List`
+- `sortBuffList`
+- `sortList`
+- `speed`
+- `speedList`
+- `startPointPositionOff`
+- `startPosition`
+- `states`
+- `summonList`
+- `summonParam`
+- `summonWaitList`
+- `t`
+- `targetInfo`
+- `targetPosition`
+- `targetUnitList`
+- `teamState1`
+- `teamState2`
+- `temp`
+- `tempBuffListForTrans`
+- `tempBuffUid`
+- `tempCardForChoose`
+- `tempCardInfos`
+- `tempCenterList`
+- `tempContainedEffectList`
+- `tempContainedEffectTagList`
+- `tempEffectCount`
+- `tempList`
+- `tempUidList`
+- `textList`
+- `tos`
+- `transformWait`
+- `transformWaitList`
+- `typeList`
+- `uidList`
+- `uniqueSkillInfoList`
+- `uniqueSkillList`
+- `unit`
+- `unitDamageInfoList`
+- `unitElementCountList`
+- `unitInfo`
+- `unitInit`
+- `unitInitList`
+- `unitList`
+- `unitRecordList`
+- `unitTypeCountList`
+- `unitUpdate`
+- `unitUpdateList`
+- `unitWith1127`
+- `unitWithout1127`
+- `units`
+- `usedAngleList`
+- `valueList`
+- `waitDealCardBurstSkillList`
+- `waitEffectAction`
+- `waitSoundAction`
+- `waitVoiceAction`
+- `waitWarningEffectAction`
+- `warningEffect`
+- `world`
+- `worldTestGrid`
+
+---
 
 > 🧠 文档由 `lua_doc_generator.py` 自动生成
